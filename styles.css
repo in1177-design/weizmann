@@ -315,6 +315,7 @@ footer.site-footer {
 .section.stationery .section-header { background: #7a5ea8; }
 .section.computer .section-header { background: #2c7a7b; }
 .section.personal .section-header { background: #b5573f; }
+.section.notebooks .section-header { background: #5c5ba0; }
 
 .section.color-blue .section-header { background: var(--blue); }
 .section.color-purple .section-header { background: #7a5ea8; }

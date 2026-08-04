@@ -163,6 +163,18 @@ main {
   color: var(--muted);
   cursor: not-allowed;
   box-shadow: var(--shadow);
+  text-decoration: none;
+}
+
+a.info-btn {
+  border-style: solid;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.info-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(30, 58, 95, 0.15);
 }
 
 .info-btn .info-icon {
@@ -302,6 +314,12 @@ footer.site-footer {
 .section.equip .section-header { background: var(--blue); }
 .section.stationery .section-header { background: #7a5ea8; }
 .section.computer .section-header { background: #2c7a7b; }
+
+.section.color-blue .section-header { background: var(--blue); }
+.section.color-purple .section-header { background: #7a5ea8; }
+.section.color-green .section-header { background: var(--green); }
+.section.color-brown .section-header { background: #8a5a3b; }
+.section.color-teal .section-header { background: #2c7a7b; }
 .section.extra .section-header { background: var(--green); }
 .section.notes .section-header { background: var(--navy); }
 .section.uniform .section-header { background: #8a5a3b; }

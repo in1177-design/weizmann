@@ -311,6 +311,18 @@ footer.site-footer {
   font-size: 1.3rem;
 }
 
+.section-header .header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.section-header .header-subtitle {
+  font-size: 0.78rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
 .section.equip .section-header { background: var(--blue); }
 .section.stationery .section-header { background: #7a5ea8; }
 .section.computer .section-header { background: #2c7a7b; }
@@ -382,6 +394,20 @@ table.supply-table td.price {
   color: var(--navy);
   font-weight: 600;
   white-space: nowrap;
+}
+
+.book-highlight {
+  background: #fff59d;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(255, 213, 79, 0.8);
+}
+
+.pink-highlight {
+  background: #f8c8d4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
 }
 
 .notebook-list {
@@ -464,6 +490,27 @@ ul.plain-list li { margin-bottom: 8px; }
   margin-top: 18px;
   font-size: 0.92rem;
   color: var(--navy);
+}
+
+.callout-yellow {
+  background: #fff9db;
+  border: 1px solid #fff59d;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 18px;
+  font-size: 0.92rem;
+  color: #6b5900;
+}
+
+.callout-pink {
+  background: #fdeef2;
+  border: 1px solid #f8c8d4;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-top: 18px;
+  margin-bottom: 22px;
+  font-size: 0.92rem;
+  color: #7a2e42;
 }
 
 .placeholder-box {

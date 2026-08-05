@@ -192,6 +192,73 @@ a.info-btn:hover {
   left: 10px;
 }
 
+.info-btn.info-btn-row {
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+  gap: 12px;
+}
+
+.info-btn .info-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.info-btn .info-title {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.info-btn .info-subtitle {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.gcal-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.gcal-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+.gcal-wordmark {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+.section-body a.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.section-body a.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(30, 58, 95, 0.2);
+}
+
 .grade-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -337,6 +404,7 @@ footer.site-footer {
 .section.extra .section-header { background: var(--green); }
 .section.notes .section-header { background: var(--navy); }
 .section.uniform .section-header { background: #8a5a3b; }
+.section.document .section-header { background: #5a6b7a; }
 
 ul.checklist {
   list-style: none;

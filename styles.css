@@ -259,6 +259,57 @@ a.info-btn:hover {
   box-shadow: 0 6px 14px rgba(30, 58, 95, 0.2);
 }
 
+.community-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-right: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  margin-top: 40px;
+  box-shadow: var(--shadow);
+}
+
+.community-card h3 {
+  margin: 0 0 12px;
+  color: var(--navy);
+  font-size: 1.15rem;
+}
+
+.community-card p {
+  margin: 0 0 10px;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.community-card p:last-child {
+  margin-bottom: 0;
+}
+
+a.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #128C7E;
+  font-weight: 700;
+  text-decoration: none;
+  background: #e9f7f4;
+  border-radius: 999px;
+  padding: 8px 18px;
+  transition: background 0.15s ease;
+}
+
+a.whatsapp-link:hover {
+  background: #d7f0ea;
+}
+
+@media (max-width: 560px) {
+  .community-card {
+    padding: 18px 16px;
+    margin-top: 28px;
+  }
+}
+
 .grade-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -567,6 +618,7 @@ ul.plain-list li { margin-bottom: 8px; }
   border-radius: 10px;
   padding: 14px 18px;
   margin-top: 18px;
+  margin-bottom: 18px;
   font-size: 0.92rem;
   color: #6b5900;
 }

@@ -108,8 +108,9 @@ main {
 
 .intro p {
   color: var(--muted);
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
+  font-size: 0.85rem;
 }
 
 .announcement {
@@ -140,9 +141,8 @@ main {
 }
 
 .info-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 16px;
   margin-bottom: 40px;
 }
@@ -153,8 +153,8 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  min-width: 170px;
-  background: var(--card-bg);
+  width: 100%;
+  background: var(--blue-light);
   border: 1px dashed var(--border);
   border-radius: var(--radius);
   padding: 18px 20px;
@@ -264,8 +264,8 @@ a.info-btn:hover {
   border: 1px solid var(--border);
   border-right: 4px solid var(--gold);
   border-radius: var(--radius);
-  padding: 22px 24px;
-  margin-top: 40px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
   box-shadow: var(--shadow);
 }
 
@@ -278,12 +278,48 @@ a.info-btn:hover {
 .community-card p {
   margin: 0 0 10px;
   color: var(--text);
-  font-size: 0.92rem;
-  line-height: 1.7;
+  font-size: 0.82rem;
+  line-height: 1.6;
 }
 
 .community-card p:last-child {
   margin-bottom: 0;
+}
+
+.community-card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.community-main {
+  flex: 2 1 0;
+  min-width: 0;
+}
+
+.community-contact {
+  flex: 1 1 0;
+  min-width: 0;
+  padding-right: 20px;
+  border-right: 1px dashed var(--border);
+}
+
+.community-contact p {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .community-card-body {
+    flex-direction: column;
+  }
+
+  .community-contact {
+    padding-right: 0;
+    padding-top: 16px;
+    border-right: none;
+    border-top: 1px dashed var(--border);
+    width: 100%;
+  }
 }
 
 a.whatsapp-link {
@@ -305,8 +341,8 @@ a.whatsapp-link:hover {
 
 @media (max-width: 560px) {
   .community-card {
-    padding: 18px 16px;
-    margin-top: 28px;
+    padding: 16px 16px;
+    margin-bottom: 20px;
   }
 }
 

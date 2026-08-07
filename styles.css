@@ -700,4 +700,55 @@ ul.plain-list li { margin-bottom: 8px; }
 @media (max-width: 560px) {
   table.supply-table { font-size: 0.85rem; }
   table.supply-table th, table.supply-table td { padding: 8px 6px; }
+
+  table.books-table thead { display: none; }
+
+  table.books-table,
+  table.books-table tbody,
+  table.books-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  table.books-table tr {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  table.books-table tr:last-child { border-bottom: none; }
+
+  table.books-table td {
+    display: block;
+    border: none;
+    padding: 2px 0;
+  }
+
+  table.books-table td:nth-child(1) {
+    order: 1;
+    width: 100%;
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  table.books-table td:nth-child(2) {
+    order: 2;
+    width: 100%;
+  }
+
+  table.books-table td:nth-child(3) {
+    order: 3;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  table.books-table td:nth-child(3)::after {
+    content: " · ";
+  }
+
+  table.books-table td:nth-child(4) {
+    order: 4;
+    font-size: 0.85rem;
+  }
 }

@@ -51,7 +51,7 @@
   <section class="section color-teal">
     <div class="section-header"><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg></span> לוח זמנים ומחירים</div>
     <div class="section-body">
-      <p style="margin-top:0;color:var(--muted);">המחירים כוללים היטל שנתי מחושב לפי מספר המפגשים בקיזוז חופשות וחגים.</p>
+      <p style="margin-top:0;color:var(--muted);">המחירים כוללים היטל שנתי מחושב לפי מספר המפגשים בקיזוז חופשות וחגים. לחצו על שם החוג לפרטים נוספים.</p>
 
       <h4 class="subhead">יום א' – 36 מפגשים</h4>
       <table class="supply-table">
@@ -66,32 +66,44 @@
         </thead>
         <tbody>
           <tr>
-            <td>בינה מלכותית ומיינקראפט</td>
+            <td><button type="button" class="club-btn club-c1" onclick="toggleClub(this, 'club-a1')">בינה מלכותית ומיינקראפט <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>א' - ו'</td>
             <td>58 ₪</td>
             <td class="price">2088 ₪</td>
           </tr>
+          <tr id="club-a1" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>Campus NeoMind</strong> – הילדים אוהבים מיינקראפט ואוהבים לחקור עולמות תוכן חדשים? בחוג חווייתי וחדשני נלמד לכתוב קוד ולתכנן פקודות, ולצד זה נצלול לעולם הבינה המלאכותית: נפתח משחקים ואתרים ונשוחח עם דמויות מפורסמות בעזרת Gemini, NotebookLM וכלים מובילים נוספים.</p></td>
+          </tr>
           <tr>
-            <td>אומנות משולבת</td>
+            <td><button type="button" class="club-btn club-c2" onclick="toggleClub(this, 'club-a2')">אומנות משולבת <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>א' - ו'</td>
             <td>51 ₪</td>
             <td class="price">1836 ₪</td>
           </tr>
+          <tr id="club-a2" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>חן שרון</strong> – חוג המשלב חומרים וטכניקות מתחומים שונים תוך הפעלת הדמיון והיצירתיות. המשתתפים ייצרו עם מגוון רחב של חומרים (קרמיקה, עץ, מחזור, טקסטיל, בצק סוכר ועוד) ויתנסו בעיצוב ובניית מוצרים שימושיים ועבודות אמנות לנוי. מיועד לכתות א'-ו'.</p></td>
+          </tr>
           <tr>
-            <td>תכשיטנות</td>
+            <td><button type="button" class="club-btn club-c3" onclick="toggleClub(this, 'club-a3')">תכשיטנות <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>14:45-15:45</td>
             <td>א' - ו'</td>
             <td>51 ₪</td>
             <td class="price">1836 ₪</td>
           </tr>
+          <tr id="club-a3" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>רונן שרעבי</strong> – לימוד טכניקות ושימוש בכלים מקצועיים, תוך שימת דגש על שיפור מוטוריקה עדינה, ריכוז וסובלנות, ופיתוח יצירתיות וחשיבה עצמאית. כל משתתף יכין תכשיטים משפע חומרים (מתכות, עור, פלסטיק, אבנים ועוד) ויקח אותם הביתה. החוג מועבר ע"י צורף מקצועי. מיועד לכתות א'-ו'.</p></td>
+          </tr>
           <tr>
-            <td>פוקימון</td>
+            <td><button type="button" class="club-btn club-c4" onclick="toggleClub(this, 'club-a4')">פוקימון <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30 / 14:30-15:30</td>
             <td>א' - ו'</td>
             <td>44 ₪</td>
             <td class="price">1584 ₪</td>
+          </tr>
+          <tr id="club-a4" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>אדם פז</strong> – קלפי פוקימון הם ספורט שולחני המבוסס על חשיבה אסטרטגית וצבירת ניקוד. הילדים יתרגלו חישובים והסתברויות, יעשירו את הדמיון בחוויה ייחודית, ולאורך השנה יקבלו קלפים לפי רמתם ויוזמנו לטורנירים ואליפויות רשמיות.</p></td>
           </tr>
         </tbody>
       </table>
@@ -112,104 +124,90 @@
         </thead>
         <tbody>
           <tr>
-            <td>רובוטרוניק (מייקיט)</td>
+            <td><button type="button" class="club-btn club-c5" onclick="toggleClub(this, 'club-h1')">רובוטרוניק (מייקיט) <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>ג' - ו'</td>
             <td>60 ₪</td>
             <td class="price">2040 ₪</td>
           </tr>
+          <tr id="club-h1" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>תקדים</strong> – חוג מתקדם עם מלחם, לילדים שאוהבים טכנולוגיה אמיתית. הילדים יבנו פרויקטים אלקטרוניים, יערכו ניסויים, ילמדו לקרוא שרטוטים חשמליים וישתמשו במכשירי מדידה. פרויקטים לדוגמה: חנוכייה מאירה ומנגנת, רכב היגוי אוירי, פעמון עברי, קוביות לדים מנגנות ועוד. מועבר ע"י מדריכים מוסמכים ממייקיט. מיועד לכתות ג' ומעלה.</p></td>
+          </tr>
           <tr>
-            <td>אלקטרוניכייף (מייקיט)</td>
+            <td><button type="button" class="club-btn club-c6" onclick="toggleClub(this, 'club-h2')">אלקטרוניכייף (מייקיט) <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>14:30-15:30</td>
             <td>א' - ב'</td>
             <td>60 ₪</td>
             <td class="price">2040 ₪</td>
           </tr>
+          <tr id="club-h2" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>תקדים</strong> – חוג בטיחותי ללא מלחם, לילדים שאוהבים טכנולוגיה אמיתית. הילדים יבנו פרויקטים אלקטרוניים, ילמדו לקרוא מעגלים חשמליים ולמדוד מתח, זרם והתנגדות. פרויקטים לדוגמה: אזעקה עם קוד אישי, כוס מוארת בחום, רכב חומק, בקרה מאירה לעציץ ועוד. מיועד לכתות א'-ב'.</p></td>
+          </tr>
           <tr>
-            <td>מדעים</td>
+            <td><button type="button" class="club-btn club-c7" onclick="toggleClub(this, 'club-h3')">מדעים <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30 (ג'-ה') / 14:30-15:30 (א'-ג')</td>
             <td>א' - ה'</td>
             <td>51 ₪</td>
             <td class="price">1734 ₪</td>
           </tr>
+          <tr id="club-h3" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>אומני החשיבה</strong> – חקירת עולמנו, הבנת תופעות טבע, ביצוע ניסויים מרהיבים וניהול מחברת מעבדה. נלמד את עולם המדע – פיזיקה, כימיה וביולוגיה – בעבר, בהווה ובעתיד.</p></td>
+          </tr>
           <tr>
-            <td>יוטיוברים צעירים</td>
+            <td><button type="button" class="club-btn club-c8" onclick="toggleClub(this, 'club-h4')">יוטיוברים צעירים <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>א' - ו'</td>
             <td>58 ₪</td>
             <td class="price">1972 ₪</td>
           </tr>
+          <tr id="club-h4" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>Campus NeoMind</strong> – מעבר מצד הצופים לצד היוצרים: כתיבת תסריטים, צילום ועריכת וידאו עם אפקטים, מוזיקה וכתוביות. הילדים ילמדו לעבוד בצוות, לעצב לוגו ופוסטרים ב-Canva, וישלבו כלי בינה מלאכותית כמו Gemini לפיתוח רעיונות. ללא צורך בידע מקדים. מיועד לכתות א'-ו'.</p></td>
+          </tr>
           <tr>
-            <td>בינה מלכותית ומיינקראפט</td>
+            <td><button type="button" class="club-btn club-c1" onclick="toggleClub(this, 'club-h5')">בינה מלכותית ומיינקראפט <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>א' - ו'</td>
             <td>58 ₪</td>
             <td class="price">1972 ₪</td>
           </tr>
+          <tr id="club-h5" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>Campus NeoMind</strong> – הילדים אוהבים מיינקראפט ואוהבים לחקור עולמות תוכן חדשים? בחוג חווייתי וחדשני נלמד לכתוב קוד ולתכנן פקודות, ולצד זה נצלול לעולם הבינה המלאכותית: נפתח משחקים ואתרים ונשוחח עם דמויות מפורסמות בעזרת Gemini, NotebookLM וכלים מובילים נוספים.</p></td>
+          </tr>
           <tr>
-            <td>לגו הנדסי</td>
+            <td><button type="button" class="club-btn club-c2" onclick="toggleClub(this, 'club-h6')">לגו הנדסי <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>א' - ו'</td>
             <td>52 ₪</td>
             <td class="price">1768 ₪</td>
           </tr>
+          <tr id="club-h6" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>מהנדסי בריקבוקס בע"מ (מיכה הירש)</strong> – חוויה לימודית המשלבת בנייה באמצעות לגו, יצירה ולימוד עקרונות הנדסיים בסיסיים – הסבר על עיקרון הנדסי ולאחריו בניית דגם הממחיש אותו. קבוצות גיל: 6-8 (עקרונות בסיסיים ודגמים ממונעים) ו-9-12 (עקרונות מתקדמים, רובוטיקה ודגמים מתוחכמים).</p></td>
+          </tr>
           <tr>
-            <td>אמנות בקומיקס</td>
+            <td><button type="button" class="club-btn club-c3" onclick="toggleClub(this, 'club-h7')">אמנות בקומיקס <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>14:45-15:45</td>
             <td>א' - ו'</td>
             <td>48 ₪</td>
             <td class="price">1632 ₪</td>
           </tr>
+          <tr id="club-h7" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>כנרת גלי</strong> – כל ילד יכול לצייר קומיקס. נלמד לצייר דמויות לפי שלבים, לשלב דימויים וטקסט וליצור עלילה מתפתחת. נכין תוצרים: סימניות, קלמר, ציור קומיקס על בד קנבס ועוד.</p></td>
+          </tr>
           <tr>
-            <td>מבוכים ודרקונים</td>
+            <td><button type="button" class="club-btn club-c4" onclick="toggleClub(this, 'club-h8')">מבוכים ודרקונים <svg class="icon-svg chevron" width="14" height="14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polyline points="6 9 12 15 18 9"/></svg></button></td>
             <td>13:30-14:30</td>
             <td>א' - ו'</td>
             <td>41 ₪</td>
             <td class="price">1394 ₪</td>
+          </tr>
+          <tr id="club-h8" class="club-detail-row" hidden>
+            <td colspan="5"><p><strong>עידו ברמן</strong> – משחק דמיון המתנהל סביב שולחן עם קוביות. כל משתתף מגלם גיבור מעולם האגדה והפנטזיה, ויחד עם החברים יוצא למסע לפתור בעיות, להילחם עבור הצדק ולמצוא אוצרות. החוג משפר חשיבה אסטרטגית ודינמיקה חברתית ומעשיר את עולם הדמיון.</p></td>
           </tr>
         </tbody>
       </table>
       <div class="callout-yellow">
         <strong>רובוטרוניק:</strong> מיועד לכתות ג' ומעלה. <strong>אלקטרוניכייף:</strong> מיועד לכתות א'-ב'. <strong>מדעים:</strong> נדרש תשלום נוסף בסך 300 ₪ ישירות לחברה עבור חומרים.
       </div>
-    </div>
-  </section>
-
-  <section class="section color-purple">
-    <div class="section-header"><span class="icon"><svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 6.5c-1.6-1.3-3.6-2-6-2H3v13h3c2.4 0 4.4.7 6 2"/><path d="M12 6.5c1.6-1.3 3.6-2 6-2h3v13h-3c-2.4 0-4.4.7-6 2"/><line x1="12" y1="6.5" x2="12" y2="19.5"/></svg></span> פירוט החוגים</div>
-    <div class="section-body">
-      <h4 class="subhead">בינה מלכותית ומיינקראפט – Campus NeoMind</h4>
-      <p>הילדים אוהבים מיינקראפט ואוהבים לחקור עולמות תוכן חדשים? בחוג חווייתי וחדשני נלמד לכתוב קוד ולתכנן פקודות, ולצד זה נצלול לעולם הבינה המלאכותית: נפתח משחקים ואתרים ונשוחח עם דמויות מפורסמות בעזרת Gemini, NotebookLM וכלים מובילים נוספים.</p>
-
-      <h4 class="subhead">אמנות משולבת – חן שרון</h4>
-      <p>חוג המשלב חומרים וטכניקות מתחומים שונים תוך הפעלת הדמיון והיצירתיות. המשתתפים ייצרו עם מגוון רחב של חומרים (קרמיקה, עץ, מחזור, טקסטיל, בצק סוכר ועוד) ויתנסו בעיצוב ובניית מוצרים שימושיים ועבודות אמנות לנוי. מיועד לכתות א'-ו'.</p>
-
-      <h4 class="subhead">תכשיטנות – רונן שרעבי</h4>
-      <p>לימוד טכניקות ושימוש בכלים מקצועיים, תוך שימת דגש על שיפור מוטוריקה עדינה, ריכוז וסובלנות, ופיתוח יצירתיות וחשיבה עצמאית. כל משתתף יכין תכשיטים משפע חומרים (מתכות, עור, פלסטיק, אבנים ועוד) ויקח אותם הביתה. החוג מועבר ע"י צורף מקצועי. מיועד לכתות א'-ו'.</p>
-
-      <h4 class="subhead">פוקימון – אדם פז</h4>
-      <p>קלפי פוקימון הם ספורט שולחני המבוסס על חשיבה אסטרטגית וצבירת ניקוד. הילדים יתרגלו חישובים והסתברויות, יעשירו את הדמיון בחוויה ייחודית, ולאורך השנה יקבלו קלפים לפי רמתם ויוזמנו לטורנירים ואליפויות רשמיות.</p>
-
-      <h4 class="subhead">רובוטרוניק (מייקיט) – תקדים</h4>
-      <p>חוג מתקדם עם מלחם, לילדים שאוהבים טכנולוגיה אמיתית. הילדים יבנו פרויקטים אלקטרוניים, יערכו ניסויים, ילמדו לקרוא שרטוטים חשמליים וישתמשו במכשירי מדידה. פרויקטים לדוגמה: חנוכייה מאירה ומנגנת, רכב היגוי אוירי, פעמון עברי, קוביות לדים מנגנות ועוד. מועבר ע"י מדריכים מוסמכים ממייקיט. מיועד לכתות ג' ומעלה.</p>
-
-      <h4 class="subhead">אלקטרוניכייף (מייקיט) – תקדים</h4>
-      <p>חוג בטיחותי ללא מלחם, לילדים שאוהבים טכנולוגיה אמיתית. הילדים יבנו פרויקטים אלקטרוניים, ילמדו לקרוא מעגלים חשמליים ולמדוד מתח, זרם והתנגדות. פרויקטים לדוגמה: אזעקה עם קוד אישי, כוס מוארת בחום, רכב חומק, בקרה מאירה לעציץ ועוד. מיועד לכתות א'-ב'.</p>
-
-      <h4 class="subhead">מדעים – אומני החשיבה</h4>
-      <p>חקירת עולמנו, הבנת תופעות טבע, ביצוע ניסויים מרהיבים וניהול מחברת מעבדה. נלמד את עולם המדע – פיזיקה, כימיה וביולוגיה – בעבר, בהווה ובעתיד.</p>
-
-      <h4 class="subhead">יוטיוברים צעירים – Campus NeoMind</h4>
-      <p>מעבר מצד הצופים לצד היוצרים: כתיבת תסריטים, צילום ועריכת וידאו עם אפקטים, מוזיקה וכתוביות. הילדים ילמדו לעבוד בצוות, לעצב לוגו ופוסטרים ב-Canva, וישלבו כלי בינה מלאכותית כמו Gemini לפיתוח רעיונות. ללא צורך בידע מקדים. מיועד לכתות א'-ו'.</p>
-
-      <h4 class="subhead">לגו הנדסי – מהנדסי הבריקבוקס בע"מ (מיכה הירש)</h4>
-      <p>חוויה לימודית המשלבת בנייה באמצעות לגו, יצירה ולימוד עקרונות הנדסיים בסיסיים – הסבר על עיקרון הנדסי ולאחריו בניית דגם הממחיש אותו. קבוצות גיל: 6-8 (עקרונות בסיסיים ודגמים ממונעים) ו-9-12 (עקרונות מתקדמים, רובוטיקה ודגמים מתוחכמים).</p>
-
-      <h4 class="subhead">אמנות בקומיקס – כנרת גלי</h4>
-      <p>כל ילד יכול לצייר קומיקס. נלמד לצייר דמויות לפי שלבים, לשלב דימויים וטקסט וליצור עלילה מתפתחת. נכין תוצרים: סימניות, קלמר, ציור קומיקס על בד קנבס ועוד.</p>
-
-      <h4 class="subhead">מבוכים ודרקונים – עידו ברמן</h4>
-      <p>משחק דמיון המתנהל סביב שולחן עם קוביות. כל משתתף מגלם גיבור מעולם האגדה והפנטזיה, ויחד עם החברים יוצא למסע לפתור בעיות, להילחם עבור הצדק ולמצוא אוצרות. החוג משפר חשיבה אסטרטגית ודינמיקה חברתית ומעשיר את עולם הדמיון.</p>
     </div>
   </section>
 
@@ -270,6 +268,21 @@
 <footer class="site-footer">
   <div>מחכים לראותכם בחוגים!</div>
 </footer>
+
+<script>
+  function toggleClub(btn, id) {
+    var row = document.getElementById(id);
+    if (!row) return;
+    var isHidden = row.hasAttribute('hidden');
+    if (isHidden) {
+      row.removeAttribute('hidden');
+      btn.classList.add('open');
+    } else {
+      row.setAttribute('hidden', '');
+      btn.classList.remove('open');
+    }
+  }
+</script>
 
 </body>
 </html>

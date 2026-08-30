@@ -631,12 +631,14 @@ table.supply-table td.price {
   }
 }
 
-ul.plain-list {
+ul.plain-list,
+ol.plain-list {
   margin: 0;
   padding-inline-start: 20px;
 }
 
-ul.plain-list li { margin-bottom: 8px; }
+ul.plain-list li,
+ol.plain-list li { margin-bottom: 8px; }
 
 .callout {
   background: var(--blue-light);
